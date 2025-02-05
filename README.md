@@ -8,7 +8,7 @@ Projeto criado como desafio para a vaga de Desenvolvedor Angular
 - [ ] Definir o layout e os componentes da tela de "Detalhes De Evento"
 - [x] Criar o Projeto Angular
 - [x] Configurar Lint e Prettier
-- [ ] Configurar PrimeNG e Tailwind
+- [x] Configurar PrimeNG e Tailwind
 
 ============================================================================
 
