@@ -1,5 +1,18 @@
 # Inchurch
 
+Projeto criado como desafio para a vaga de Desenvolvedor Angular
+
+## Tarefas:
+- [x] Definir os componentes da tela de "Eventos"
+- [ ] Definir os layout e os componentes da tela de "Login"
+- [ ] Definir o layout e os componentes da tela de "Detalhes De Evento"
+- [x] Criar o Projeto Angular
+- [x] Configurar Lint e Prettier
+- [ ] Configurar PrimeNG e Tailwind
+
+============================================================================
+
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
 
 ## Development server
