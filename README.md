@@ -9,6 +9,7 @@ Projeto criado como desafio para a vaga de Desenvolvedor Angular
 - [x] Criar o Projeto Angular
 - [x] Configurar Lint e Prettier
 - [x] Configurar PrimeNG e Tailwind
+- [x] Adicionar Json Server para simular a interação com um servidor de verdade
 
 ============================================================================
 
