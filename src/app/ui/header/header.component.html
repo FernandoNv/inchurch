@@ -8,7 +8,7 @@
           alt="Inchurch Logo"
         />
       </a>
-      <span class="app-church-id">ID da igreja 1985</span>
+      <span class="app-church-id">ID da igreja: 1985</span>
     </div>
   </ng-template>
 
@@ -18,13 +18,8 @@
         variant="text"
         severity="secondary"
         (click)="headerOptions.toggle($event)"
-        class="flex items-center font-bold"
       >
-        <p-avatar
-          image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
-          [style]="{ width: '32px', height: '32px' }"
-        />
-        <span class="app-profile-name">{{ user().name.split(" ")[0] }}</span>
+        <app-profile-info [user]="user()" />
       </p-button>
       <p-menu
         #headerOptions

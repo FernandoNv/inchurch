@@ -1,0 +1,7 @@
+.app-profile-info{
+  @apply flex items-center justify-center font-bold;
+
+  .app-profile-name{
+    @apply mx-2
+  }
+}
