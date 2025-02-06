@@ -1,20 +1,45 @@
-<form class="app-sign-up-form">
+<form [formGroup]="signupForm" class="app-sign-up-form">
   <h1 class="app-title">Cadastre-se na Inchurch</h1>
   <div class="app-sign-up-info-area">
     <label for="email">Nome</label>
-    <input pInputText type="text" id="name" placeholder="Informe o seu nome" />
+    <input
+      pInputText
+      formControlName="name"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Informe o seu nome"
+    />
+    @if (signupForm.get("name")?.errors && signupForm.get("name")?.touched) {
+      <p-message severity="error" variant="simple" size="small">
+        O nome é obrigatório
+      </p-message>
+    }
   </div>
   <div class="app-sign-up-info-area">
     <label for="email">E-mail</label>
     <input
       pInputText
+      formControlName="email"
       id="email"
+      name="email"
       type="email"
       placeholder="Informe o seu email"
       aria-describedby="email-help"
     />
     <small id="email-help"> Ex: email&#64;email.com </small>
+    @if (signupForm.get("email")?.errors && signupForm.get("email")?.touched) {
+      <p-message severity="error" variant="simple" size="small">
+        E-mail incorreto
+      </p-message>
+    }
   </div>
-  <p-button label="Cadastrar" class="app-submit" />
+  <p-button
+    [disabled]="signupForm.invalid"
+    type="button"
+    label="Cadastrar"
+    class="app-submit"
+    (click)="signup()"
+  />
   <p-button label="Fazer Login" [link]="true" routerLink="/auth/signin" />
 </form>

@@ -9,9 +9,9 @@ Projeto criado como desafio para a vaga de Desenvolvedor Angular
 - [x] Adicionar Json Server para simular interação com um servidor de verdade
 - [x] Definir layout e os componentes da tela de "Login"
   - [x] Criar tela de Login
-    - [ ] Fazer autenticação e salvar dados do usuario na aplicação
+    - [x] Fazer autenticação e salvar dados do usuario na aplicação
   - [x] Criar tela de Cadastro
-    - [ ] Salvar dados na API
+    - [x] Salvar dados na API
 - [x] Definir os componentes da tela de "Eventos"
 - [ ] Definir layout e os componentes da tela de "Detalhes De Evento"
 ============================================================================

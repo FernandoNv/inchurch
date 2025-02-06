@@ -2,12 +2,19 @@
   "events": [],
   "users": [
     {
+      "id": 1,
       "name": "Fernando Vieira",
       "email": "fernando.vieira@email.com"
     },
     {
+      "id": 2,
       "name": "Nome Teste",
       "email": "nome.teste@email.com"
+    },
+    {
+      "name": "Fernando",
+      "email": "fernando.teste@email.com",
+      "id": 3
     }
   ]
 }

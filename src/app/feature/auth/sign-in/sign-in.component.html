@@ -3,15 +3,27 @@
   <div class="app-sign-in-info-area">
     <label for="email">E-mail</label>
     <input
+      [(ngModel)]="email"
       pInputText
       id="email"
+      name="email"
       type="email"
       placeholder="Informe o seu email"
       aria-describedby="email-help"
     />
     <small id="email-help"> Ex: email&#64;email.com </small>
+    @if (hasErrors()) {
+      <p-message
+        styleClass="flex justify-center"
+        severity="error"
+        variant="simple"
+        size="small"
+      >
+        E-mail incorreto
+      </p-message>
+    }
   </div>
-  <p-button class="app-submit" label="Entrar" />
+  <p-button (click)="signin()" class="app-submit" label="Entrar" />
   <p-button
     label="Cadastrar uma conta"
     [link]="true"
