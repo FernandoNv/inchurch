@@ -13,8 +13,25 @@ Projeto criado como desafio para a vaga de Desenvolvedor Angular
   - [x] Criar tela de Cadastro
     - [x] Salvar dados na API
 - [x] Definir os componentes da tela de "Eventos"
-- [ ] Definir layout e os componentes da tela de "Detalhes De Evento"
-============================================================================
+- [X] Definir layout e os componentes da tela de "Detalhes De Evento"
+- [x] Adicionar componente de header
+- [ ] Adicionar componente de menu lateral
+- [ ] Adicionar componente para filtro de eventos
+- [ ] Adicionar componente para listar Eventos(Visão cards)
+  - [ ] Adicionar componente Evento(Visão card)
+- [ ] Adicionar componente para listar Eventos(Visão Tabela)
+- [ ] Adicionar componente e pagina para criação de Evento
+- [ ] Adicionar componente e pagina para edição de Evento
+- [ ] Adicionar modal para exclusão de Evento
+- [ ] Adicionar Teste do Cypress
+  - [ ] Teste de Login
+  - [ ] Teste de criação de Evento
+  - [ ] Teste de edição de Evento
+  - [ ] Teste de Exclusão de Evento
+  - [ ] Teste de Listagem de Evento
+    - [ ] Visão de Tabela
+    - [ ] Visão de Cards
+=========================================================================
 
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
