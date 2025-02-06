@@ -1,1 +1,39 @@
-<p>events-list works!</p>
+<section class="app-events">
+  <div class="app-title-and-actions-area">
+    <section class="app-subheader-area">
+      <div class="app-title">
+        <i class="pi pi-ticket text-2xl pr-2"></i>
+        <h1>Eventos</h1>
+      </div>
+      <div class="app-actions-area">
+        <span class="app-action">
+          <p-iconfield styleClass="inline">
+            <input type="text" pInputText placeholder="Search" />
+            <p-inputicon styleClass="pi pi-search" />
+          </p-iconfield>
+        </span>
+        <span class="app-action">
+          <p-button size="large" [outlined]="true" severity="secondary">
+            <i class="pi pi-filter"></i>
+          </p-button>
+        </span>
+        <span class="app-action">
+          <p-button size="large" [outlined]="true" severity="secondary">
+            <i class="pi pi-download"></i>
+          </p-button>
+        </span>
+        <span class="app-action">
+          <p-button size="large" [outlined]="true" severity="secondary">
+            <i class="pi pi-th-large"></i>
+          </p-button>
+        </span>
+        <span class="app-action">
+          <p-button label="Novo">
+            <i class="pi pi-plus"></i>
+          </p-button>
+        </span>
+      </div>
+    </section>
+    <section class="app-content">Lista de Eventos</section>
+  </div>
+</section>

@@ -8,11 +8,11 @@ import { RouterOutlet } from '@angular/router';
   imports: [MenuComponent, HeaderComponent, RouterOutlet],
   template: `
     <app-menu class="app-menu" />
-    <div class="app-container">
+    <main class="app-container">
       <app-header />
       <router-outlet />
       <footer>inChurch - Fernando Vieira</footer>
-    </div>
+    </main>
   `,
   styles: `
     :host {

@@ -1,3 +1,24 @@
 :host{
   @apply w-full h-full;
+
+  .app-title-and-actions-area{
+
+    .app-subheader-area{
+      @apply flex flex-row justify-between;
+      .app-title{
+        @apply flex flex-row items-center p-2;
+
+        h1{
+          @apply text-2xl font-bold;
+        }
+      }
+    }
+
+    .app-actions-area{
+      @apply py-2;
+      .app-action{
+        @apply pl-2;
+      }
+    }
+  }
 }
