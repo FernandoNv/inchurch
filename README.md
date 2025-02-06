@@ -3,14 +3,17 @@
 Projeto criado como desafio para a vaga de Desenvolvedor Angular
 
 ## Tarefas:
-- [x] Definir os componentes da tela de "Eventos"
-- [ ] Definir os layout e os componentes da tela de "Login"
-- [ ] Definir o layout e os componentes da tela de "Detalhes De Evento"
 - [x] Criar o Projeto Angular
 - [x] Configurar Lint e Prettier
 - [x] Configurar PrimeNG e Tailwind
-- [x] Adicionar Json Server para simular a interação com um servidor de verdade
-
+- [x] Adicionar Json Server para simular interação com um servidor de verdade
+- [x] Definir layout e os componentes da tela de "Login"
+  - [x] Criar tela de Login
+    - [ ] Fazer autenticação e salvar dados do usuario na aplicação
+  - [x] Criar tela de Cadastro
+    - [ ] Salvar dados na API
+- [x] Definir os componentes da tela de "Eventos"
+- [ ] Definir layout e os componentes da tela de "Detalhes De Evento"
 ============================================================================
 
 

@@ -1,3 +1,13 @@
 {
-  "events": []
+  "events": [],
+  "users": [
+    {
+      "name": "Fernando Vieira",
+      "email": "fernando.vieira@email.com"
+    },
+    {
+      "name": "Nome Teste",
+      "email": "nome.teste@email.com"
+    }
+  ]
 }

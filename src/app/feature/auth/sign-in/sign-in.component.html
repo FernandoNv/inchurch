@@ -1,0 +1,20 @@
+<form class="app-sign-in-form">
+  <h1 class="app-title">Faça Login na Inchurch</h1>
+  <div class="app-sign-in-info-area">
+    <label for="email">E-mail</label>
+    <input
+      pInputText
+      id="email"
+      type="email"
+      placeholder="Informe o seu email"
+      aria-describedby="email-help"
+    />
+    <small id="email-help"> Ex: email&#64;email.com </small>
+  </div>
+  <p-button class="app-submit" label="Entrar" />
+  <p-button
+    label="Cadastrar uma conta"
+    [link]="true"
+    routerLink="/auth/signup"
+  />
+</form>

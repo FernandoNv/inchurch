@@ -1,0 +1,17 @@
+:host{
+  .app-sign-in-form {
+    @apply border-2 border-solid border-zinc-300 flex flex-col items-center w-80 p-2;
+
+    .app-title {
+      @apply my-2 text-3xl font-bold text-slate-400 text-center
+    }
+
+    .app-sign-in-info-area {
+      @apply flex flex-col gap-2 mb-6;
+    }
+
+    .app-submit {
+      @apply mb-2;
+    }
+  }
+}
