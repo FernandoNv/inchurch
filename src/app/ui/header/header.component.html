@@ -1,0 +1,37 @@
+<p-toolbar class="app-header">
+  <ng-template #start>
+    <div class="logo-and-church-info-area">
+      <a routerLink="/events">
+        <img
+          class="app-logo"
+          src="images/inchurch-logo.svg"
+          alt="Inchurch Logo"
+        />
+      </a>
+      <span class="app-church-id">ID da igreja 1985</span>
+    </div>
+  </ng-template>
+
+  <ng-template #end>
+    <div class="app-profile-area">
+      <p-button
+        variant="text"
+        severity="secondary"
+        (click)="headerOptions.toggle($event)"
+        class="flex items-center font-bold"
+      >
+        <p-avatar
+          image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+          [style]="{ width: '32px', height: '32px' }"
+        />
+        <span class="app-profile-name">{{ user().name.split(" ")[0] }}</span>
+      </p-button>
+      <p-menu
+        #headerOptions
+        class="app-profile-button"
+        [model]="items"
+        [popup]="true"
+      />
+    </div>
+  </ng-template>
+</p-toolbar>

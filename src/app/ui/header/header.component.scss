@@ -1,0 +1,22 @@
+.app-header{
+  @apply p-1;
+
+  .logo-and-church-info-area{
+    @apply flex items-center flex-col gap-2 sm:flex-row;
+
+    .app-church-id{
+      @apply sm:ml-3 ml-0 text-sm sm:text-inherit;
+    }
+  }
+
+  .app-profile-area{
+    @apply flex items-center gap-2;
+  }
+
+}
+
+::ng-deep{
+  //.p-toolbar{
+  //  border: none !important;
+  //}
+}

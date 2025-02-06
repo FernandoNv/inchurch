@@ -1,8 +1,9 @@
-import { inject, Injectable, signal } from '@angular/core';
+import { inject, Injectable, Signal, signal } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { TokenService } from './token.service';
 import { Observable, retry, take } from 'rxjs';
+import { Router } from '@angular/router';
 
 export interface IUser {
   id?: number;
@@ -19,9 +20,10 @@ export interface ISigninData {
 })
 export class AuthService {
   private readonly API_URL: string = `${environment.apiUrl}/users`;
-  private user = signal<IUser | null>(null);
-  private http: HttpClient = inject(HttpClient);
-  private tokenService: TokenService = inject(TokenService);
+  private readonly user = signal<IUser | null>(null);
+  private readonly http: HttpClient = inject(HttpClient);
+  private readonly tokenService: TokenService = inject(TokenService);
+  private readonly router = inject(Router);
 
   constructor() {
     if (this.tokenService.hasToken()) {
@@ -56,12 +58,13 @@ export class AuthService {
     return this.tokenService.hasToken();
   }
 
-  public getEmployee() {
-    return this.user.asReadonly();
+  public getUser(): Signal<IUser> {
+    return this.user.asReadonly() as Signal<IUser>;
   }
 
   public signout() {
     this.tokenService.removeToken();
+    this.router.navigate(['']);
   }
 
   public signup(user: IUser): Observable<IUser> {
