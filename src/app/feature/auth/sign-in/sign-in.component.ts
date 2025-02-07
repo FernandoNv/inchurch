@@ -24,7 +24,6 @@ export class SignInComponent {
       .signin({ email: this.email() })
       .pipe(take(1))
       .subscribe((next) => {
-        console.log(next);
         if (next.length === 0) {
           this.hasErrors.set(true);
           return;

@@ -1,15 +1,15 @@
-.app-header{
-  @apply w-full;
+.app-header {
+  @apply w-full bg-white;
 
-  .logo-and-church-info-area{
-    @apply flex md:items-center flex-col gap-2 sm:flex-row;
+  .logo-and-church-info-area {
+    @apply flex md:items-center flex-col sm:flex-row pl-2;
 
-    .app-church-id{
-      @apply sm:ml-3 ml-0 text-sm sm:text-inherit;
+    .app-church-id {
+      @apply sm:ml-3 ml-0 flex items-center text-sm sm:text-inherit;
     }
   }
 
-  .app-profile-area{
+  .app-profile-area {
     @apply flex items-center;
   }
 }

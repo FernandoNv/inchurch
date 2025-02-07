@@ -1,24 +1,22 @@
-<p-menu [model]="items" class="flex justify-between" styleClass="w-full">
-  <ng-template #start>
-    <span class="inline-flex items-center px-2 py-2"> Menu icon </span>
-  </ng-template>
-  <ng-template #submenuheader let-item>
-    <span class="text-primary font-bold">{{ item.label }}</span>
-  </ng-template>
-  <ng-template #item let-item>
-    <a pRipple class="flex items-center p-menu-item-link">
-      <span [class]="item.icon"></span>
-      <span class="ml-2">{{ item.label }}</span>
-    </a>
-  </ng-template>
-  <ng-template #end>
-    <a pRipple class="flex items-center p-menu-item-link">
-      <span></span>
-      <span class="ml-2">Xmission</span>
-    </a>
-    <a pRipple class="flex items-center p-menu-item-link">
-      <span></span>
-      <span class="ml-2">Loja</span>
-    </a>
-  </ng-template>
-</p-menu>
+<nav class="app-menu-sidebar hidden md:block">
+  <ul>
+    <li>
+      <a class="app-menu-icon mb-11 mt-2">
+        <i class="pi pi-bars"></i>
+      </a>
+    </li>
+
+    @for (item of items; track item.label) {
+      <li>
+        <a
+          class="app-link-item hover:bg-[#e5eaec]"
+          routerLinkActive="app-router-active"
+          [routerLink]="item['route']"
+        >
+          <i [class]="['pi', item.icon]"></i>
+          <span>{{ item.label }}</span>
+        </a>
+      </li>
+    }
+  </ul>
+</nav>

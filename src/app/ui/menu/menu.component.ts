@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { Menu } from 'primeng/menu';
-import { Ripple } from 'primeng/ripple';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
-  imports: [Menu, Ripple],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss',
 })
@@ -14,31 +13,38 @@ export class MenuComponent {
   protected items: MenuItem[] = [
     {
       label: 'Início',
-      icon: 'https://primefaces.org/cdn/primeng/images/dock/finder.svg',
+      icon: 'pi-palette',
+      route: '/dashboard',
     },
     {
       label: 'Pessoas',
-      icon: 'https://primefaces.org/cdn/primeng/images/dock/appstore.svg',
+      icon: 'pi-users',
+      route: '/people',
     },
     {
       label: 'Células',
-      icon: 'https://primefaces.org/cdn/primeng/images/dock/photos.svg',
+      icon: 'pi-bullseye',
+      route: '/branch',
     },
     {
       label: 'Orações',
-      icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png',
+      icon: 'pi-palette',
+      route: '/prays',
     },
     {
       label: 'Kids',
-      icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png',
+      icon: 'pi-palette',
+      route: '/kids',
     },
     {
       label: 'Conteúdos',
-      icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png',
+      icon: 'pi-palette',
+      route: '/contents',
     },
     {
       label: 'Eventos',
-      icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png',
+      icon: 'pi-palette',
+      route: '/events',
     },
   ];
 }

@@ -1,3 +1,19 @@
-:host{
-  @apply h-full
+.app-menu-sidebar {
+  @apply h-full w-fit bg-[#F5F7FA] p-2 rounded-md;
+
+  .app-menu-icon,
+  .app-link-item {
+    @apply flex flex-col items-center justify-center p-2 gap-2 text-gray-400;
+  }
+  .app-link-item {
+    @apply mb-4;
+
+    span {
+      @apply text-xs font-semibold;
+    }
+  }
+
+  .app-router-active i {
+    @apply text-green-500;
+  }
 }
