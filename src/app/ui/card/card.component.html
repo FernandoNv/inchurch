@@ -1,0 +1,43 @@
+<p-card
+  [style]="{ 'max-width': '300px', overflow: 'hidden', position: 'relative' }"
+>
+  <ng-template #header>
+    <img alt="Card" class="w-full" [src]="imageSrc()" />
+  </ng-template>
+  <h2 class="font-bold py-2 mb-1">{{ appTitle() }}</h2>
+  <span
+    class="px-4 py-2 bg-white shadow-md rounded-xl absolute top-[132px] left-[100] font-semibold text-sm"
+    >{{ status() }}</span
+  >
+  <p class="text-sm">{{ description() }}</p>
+  <ng-template #footer>
+    <div class="flex mt-1 flex-row justify-between items-center">
+      <div class="app-created-at">
+        <p class="text-[var(--p-button-success-border-color)]">Publicado em</p>
+        <div class="app-created-at">{{ createdAt() }}</div>
+      </div>
+      <div class="app-button-actions self-end">
+        <span class="app-action px-1">
+          <p-button
+            size="large"
+            variant="text"
+            [outlined]="false"
+            severity="secondary"
+          >
+            <i class="pi pi-pencil"></i>
+          </p-button>
+        </span>
+        <span class="app-action">
+          <p-button
+            size="large"
+            variant="text"
+            [outlined]="false"
+            severity="secondary"
+          >
+            <i class="pi pi-trash"></i>
+          </p-button>
+        </span>
+      </div>
+    </div>
+  </ng-template>
+</p-card>

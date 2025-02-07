@@ -34,6 +34,18 @@
         </span>
       </div>
     </section>
-    <section class="app-content">Lista de Eventos</section>
+    <section
+      class="app-content flex flex-row items-center justify-center flex-wrap gap-5"
+    >
+      @for (time of times; track time) {
+        <app-card
+          [title]="MOCK_EVENT.title"
+          [description]="MOCK_EVENT.description"
+          [imageSrc]="MOCK_EVENT.imageSrc"
+          [status]="MOCK_EVENT.status"
+          [createdAt]="MOCK_EVENT.createdAd"
+        />
+      }
+    </section>
   </div>
 </section>

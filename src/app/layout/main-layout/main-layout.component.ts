@@ -24,7 +24,7 @@ import { RouterOutlet } from '@angular/router';
 
       .app-container {
         @apply m-auto flex flex-col w-full;
-        height: calc(100dvh - 112px); // didplay - header - footer
+        min-height: calc(100dvh - 112px); // didplay - header - footer
       }
     }
   `,
