@@ -4,5 +4,5 @@ export interface IEvent {
   title: string;
   description: string;
   status: 'active' | 'inactive';
-  createdAd: string;
+  createdAt: string;
 }
