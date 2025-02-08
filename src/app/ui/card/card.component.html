@@ -1,12 +1,19 @@
 <p-card
-  [style]="{ 'max-width': '300px', overflow: 'hidden', position: 'relative' }"
+  styleClass="max-w-80 h-[420px] overflow-hidden relative flex justify-between"
 >
   <ng-template #header>
-    <img alt="Card" class="w-full" [src]="imageSrc()" />
+    <img
+      class="w-full"
+      width="300"
+      height="200"
+      priority
+      [alt]="'Image do evento: ' + appTitle()"
+      [ngSrc]="imageSrc()"
+    />
   </ng-template>
   <h2 class="font-bold py-2 mb-1">{{ appTitle() }}</h2>
   <span
-    class="px-4 py-2 bg-white shadow-md rounded-xl absolute top-[132px] left-[100] font-semibold text-sm"
+    class="px-4 py-2 bg-white shadow-md rounded-xl absolute top-[195px] left-[20px] font-semibold text-sm"
     >{{ status() }}</span
   >
   <p class="text-sm">{{ description() }}</p>

@@ -1,0 +1,41 @@
+<section class="app-events-header">
+  <div class="app-title">
+    <i class="pi pi-ticket text-2xl pr-2"></i>
+    <h1>Eventos</h1>
+  </div>
+  <div class="app-actions-area">
+    <div class="app-action lg:flex lg:items-center">
+      <p-iconfield>
+        <input
+          class="w-full lg:w-80"
+          type="text"
+          pInputText
+          placeholder="Search"
+        />
+        <p-inputicon styleClass="pi pi-search" />
+      </p-iconfield>
+    </div>
+    <div class="app-actions-group">
+      <span class="app-action">
+        <p-button size="large" [outlined]="true" severity="secondary">
+          <i class="pi pi-filter"></i>
+        </p-button>
+      </span>
+      <span class="app-action">
+        <p-button size="large" [outlined]="true" severity="secondary">
+          <i class="pi pi-download"></i>
+        </p-button>
+      </span>
+      <span class="app-action">
+        <p-button size="large" [outlined]="true" severity="secondary">
+          <i class="pi pi-th-large"></i>
+        </p-button>
+      </span>
+      <span class="app-action">
+        <p-button label="Novo" styleClass="w-36">
+          <i class="pi pi-plus text-xs"></i>
+        </p-button>
+      </span>
+    </div>
+  </div>
+</section>

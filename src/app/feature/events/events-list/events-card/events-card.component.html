@@ -1,0 +1,13 @@
+<section class="app-events-card">
+  @for (event of events(); track event.id) {
+    <app-card
+      [title]="event.title"
+      [description]="event.description"
+      [imageSrc]="event.imageSrc"
+      [status]="event.status"
+      [createdAt]="event.createdAd"
+    />
+  } @empty {
+    <p>Sem dados no momento...</p>
+  }
+</section>

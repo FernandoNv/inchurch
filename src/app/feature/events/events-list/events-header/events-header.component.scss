@@ -1,0 +1,21 @@
+.app-events-header {
+  @apply flex flex-col lg:flex-row justify-between bg-white px-4 py-2 rounded-md;
+  .app-title {
+    @apply flex flex-row items-center p-2 mx-auto lg:mx-0;
+
+    h1 {
+      @apply text-2xl font-bold;
+    }
+  }
+
+  .app-actions-area {
+    @apply flex flex-col lg:flex-row;
+    .app-action {
+      @apply pl-2;
+    }
+
+    .app-actions-group {
+      @apply flex flex-row items-start justify-end py-2;
+    }
+  }
+}

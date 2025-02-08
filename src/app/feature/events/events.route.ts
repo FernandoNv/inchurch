@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router';
 import { EventsListComponent } from './events-list/events-list.component';
+import { EventService } from './event.service';
 
 export const routes: Routes = [
   {
     path: '',
-    providers: [],
+    providers: [EventService],
     children: [
       {
         path: '',

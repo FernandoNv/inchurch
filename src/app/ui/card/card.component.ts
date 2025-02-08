@@ -1,10 +1,11 @@
 import { Component, input, output } from '@angular/core';
 import { Card } from 'primeng/card';
 import { Button } from 'primeng/button';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-card',
-  imports: [Card, Button],
+  imports: [Card, Button, NgOptimizedImage],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
 })

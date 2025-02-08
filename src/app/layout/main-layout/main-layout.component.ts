@@ -21,8 +21,8 @@ import { HeaderComponent } from '../../ui/header/header.component';
       @apply w-full h-full flex flex-row container m-auto p-4 md:gap-2;
 
       .app-container {
-        @apply m-auto flex flex-col w-full;
-        min-height: calc(100dvh - 132px); // didplay - header - footer
+        @apply m-auto w-full h-full;
+        min-height: calc(100dvh - 126px); // didplay - header - footer
       }
 
       .app-footer {
