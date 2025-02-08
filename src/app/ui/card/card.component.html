@@ -32,10 +32,12 @@
     <div class="flex mt-1 flex-row justify-between items-center">
       <div class="app-created-at">
         <p class="text-[var(--p-button-success-border-color)]">Publicado em</p>
-        <div class="app-created-at">{{ createdAt() }}</div>
+        <div class="app-created-at">
+          {{ createdAt() | cardCreatedAtFormatter }}
+        </div>
       </div>
       <div class="app-button-actions self-end">
-        <span class="app-action px-1">
+        <span class="app-action">
           <p-button
             size="large"
             variant="text"

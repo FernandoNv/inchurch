@@ -2,10 +2,11 @@ import { Component, input, output } from '@angular/core';
 import { Card } from 'primeng/card';
 import { Button } from 'primeng/button';
 import { NgOptimizedImage } from '@angular/common';
+import { CardCreatedAtFormatterPipe } from './card-created-at-formatter.pipe';
 
 @Component({
   selector: 'app-card',
-  imports: [Card, Button, NgOptimizedImage],
+  imports: [Card, Button, NgOptimizedImage, CardCreatedAtFormatterPipe],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
 })
@@ -20,7 +21,11 @@ export class CardComponent {
   deleteButtonClick = output();
 
   private formatDescription(value: string): string {
-    return value?.slice(0, 80) + '...';
+    if (value.length > 80) {
+      return value?.slice(0, 80) + '...';
+    }
+
+    return value;
   }
 
   protected onEditButtonClick(): void {
