@@ -11,29 +11,23 @@ import { CardCreatedAtFormatterPipe } from './card-created-at-formatter.pipe';
   styleUrl: './card.component.scss',
 })
 export class CardComponent {
+  id = input<number>(-1);
   appTitle = input<string>('', { alias: 'title' });
   description = input('', { transform: this.formatDescription });
   imageSrc = input<string>('');
   status = input('', { transform: this.formatStatus });
   createdAt = input<string>('');
 
-  editButtonClick = output();
-  deleteButtonClick = output();
+  onEditButtonClick = output<number>();
+  onDeleteButtonClick = output<{ event: Event; id: number }>();
 
   private formatDescription(value: string): string {
-    if (value.length > 80) {
-      return value?.slice(0, 80) + '...';
+    const MAX_STRING_LENGTH = 75;
+    if (value.length >= MAX_STRING_LENGTH) {
+      return value?.slice(0, MAX_STRING_LENGTH) + '...';
     }
 
     return value;
-  }
-
-  protected onEditButtonClick(): void {
-    this.editButtonClick.emit();
-  }
-
-  protected onDeleteButtonClick(): void {
-    this.deleteButtonClick.emit();
   }
 
   private formatStatus(value: string): string {
@@ -42,5 +36,13 @@ export class CardComponent {
     }
 
     return 'Sem ingressos ativos';
+  }
+
+  protected editButtonClick(): void {
+    this.onEditButtonClick.emit(this.id());
+  }
+
+  protected deleteButtonClick(event: Event): void {
+    this.onDeleteButtonClick.emit({ event, id: this.id() });
   }
 }

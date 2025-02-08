@@ -1,4 +1,8 @@
 <section class="app-events-list">
   <app-events-header />
-  <app-events-card [events]="events()" />
+  <app-events-card
+    (onDeleteButtonClick)="onDeleteButtonClick($event)"
+    (onEditButtonClick)="onEditButtonClick($event)"
+    [events]="events()"
+  />
 </section>

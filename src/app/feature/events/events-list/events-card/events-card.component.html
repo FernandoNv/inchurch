@@ -1,6 +1,9 @@
 <section class="app-events-card">
   @for (event of events(); track event.id) {
     <app-card
+      (onDeleteButtonClick)="deleteButtonClick($event)"
+      (onEditButtonClick)="editButtonClick($event)"
+      [id]="event.id"
       [title]="event.title"
       [description]="event.description"
       [imageSrc]="event.imageSrc"

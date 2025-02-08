@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { CardComponent } from '../../../../ui/card/card.component';
 import { IEvent } from '../../event';
 
@@ -10,4 +10,15 @@ import { IEvent } from '../../event';
 })
 export class EventsCardComponent {
   events = input<IEvent[]>([] as IEvent[]);
+
+  onDeleteButtonClick = output<{ event: Event; id: number }>();
+  onEditButtonClick = output<number>();
+
+  deleteButtonClick(event: { event: Event; id: number }) {
+    this.onDeleteButtonClick.emit(event);
+  }
+
+  editButtonClick(id: number) {
+    this.onEditButtonClick.emit(id);
+  }
 }

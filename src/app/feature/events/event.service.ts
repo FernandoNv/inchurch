@@ -31,4 +31,10 @@ export class EventService {
       })
       .pipe(take(1));
   }
+
+  deleteById(id: number): Observable<IEvent> {
+    const url = `${this.API_URL}/${id}`;
+
+    return this.http.delete<IEvent>(url).pipe(take(1));
+  }
 }
