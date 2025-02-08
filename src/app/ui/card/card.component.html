@@ -2,14 +2,25 @@
   styleClass="max-w-80 h-[420px] overflow-hidden relative flex justify-between"
 >
   <ng-template #header>
-    <img
-      class="w-full"
-      width="300"
-      height="200"
-      priority
-      [alt]="'Image do evento: ' + appTitle()"
-      [ngSrc]="imageSrc()"
-    />
+    @if (imageSrc() && imageSrc() !== "") {
+      <img
+        class="w-full"
+        width="300"
+        height="200"
+        priority
+        [alt]="'Image do evento: ' + appTitle()"
+        [ngSrc]="imageSrc()"
+      />
+    } @else {
+      <img
+        class="w-full"
+        width="300"
+        height="200"
+        priority
+        alt="Evento sem imagem definida"
+        ngSrc="images/no-image.png"
+      />
+    }
   </ng-template>
   <h2 class="font-bold py-2 mb-1">{{ appTitle() }}</h2>
   <span
