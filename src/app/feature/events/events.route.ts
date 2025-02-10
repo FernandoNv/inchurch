@@ -3,11 +3,12 @@ import { EventsListComponent } from './events-list/events-list.component';
 import { EventService } from './event.service';
 import { EventsCreateComponent } from './events-create/events-create.component';
 import { EventsEditComponent } from './events-edit/events-edit.component';
+import { EventDataService } from './event-data.service';
 
 export const routes: Routes = [
   {
     path: '',
-    providers: [EventService],
+    providers: [EventService, EventDataService],
     children: [
       {
         path: '',

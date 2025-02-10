@@ -1,5 +1,5 @@
 <section class="app-events-list">
-  <app-events-header />
+  <app-events-header (onSearchChange)="onSearchChange($event)" />
   @if (view() === "cards") {
     <app-events-card
       (onDeleteButtonClick)="onDeleteButtonClick($event)"

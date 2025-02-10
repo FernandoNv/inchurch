@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { Button } from 'primeng/button';
 import { EventsTableComponent } from './events-table/events-table.component';
+import { EventDataService } from '../event-data.service';
 
 const VIEW_CARD_LABEL = 'Ver tabela em lista';
 const VIEW_TABLE_LABEL = 'Ver tabela em cards';
@@ -29,13 +30,14 @@ export interface IEventListItem extends Omit<IEvent, 'status'> {
   styleUrl: './events-list.component.scss',
 })
 export class EventsListComponent {
-  private readonly service = inject(EventService);
+  private readonly eventService = inject(EventService);
+  private readonly eventDataService = inject(EventDataService);
   private readonly confirmationService: ConfirmationService =
     inject(ConfirmationService);
   private readonly messageService: MessageService = inject(MessageService);
   private readonly router = inject(Router);
 
-  private events$: Observable<IEvent[]> = this.service.getAllByFilter();
+  private events$: Observable<IEvent[]> = this.eventDataService.getData();
 
   events = toSignal(this.events$, { initialValue: [] as IEvent[] });
   eventList = computed(() => this.formatEvents(this.events()));
@@ -68,13 +70,13 @@ export class EventsListComponent {
       },
 
       accept: () => {
-        this.service.deleteById(e.id).subscribe((next) => {
+        this.eventService.deleteById(e.id).subscribe((next) => {
+          this.eventService.setNextDataBySearch();
           this.messageService.add({
             severity: 'success',
             summary: 'Confirmado',
             detail: 'Evento excluido com sucesso',
           });
-          this.router.navigate(['../events']);
         });
       },
       reject: () => {
@@ -96,5 +98,9 @@ export class EventsListComponent {
     this.viewLabel.update((prev) =>
       prev === VIEW_CARD_LABEL ? VIEW_TABLE_LABEL : VIEW_CARD_LABEL,
     );
+  }
+
+  onSearchChange(search: string): void {
+    this.eventService.setNextDataBySearch(1, search);
   }
 }
