@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnDestroy } from '@angular/core';
 import { InputText } from 'primeng/inputtext';
 import { Textarea } from 'primeng/textarea';
 import {
@@ -16,13 +16,7 @@ import { Observable } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Router, RouterLink } from '@angular/router';
 import { MessageService } from 'primeng/api';
-
-export interface IEventCreate {
-  title: string;
-  description: string;
-  status: string;
-  imageSrc: string;
-}
+import { IEventDTO } from '../event';
 
 @Component({
   selector: 'app-events-create',
@@ -38,7 +32,7 @@ export interface IEventCreate {
   templateUrl: './events-create.component.html',
   styleUrl: './events-create.component.scss',
 })
-export class EventsCreateComponent {
+export class EventsCreateComponent implements OnDestroy {
   private readonly fb: FormBuilder = inject(FormBuilder);
   private readonly eventService: EventService = inject(EventService);
   private readonly imageGeneratorService: ImageGeneratorService = inject(
@@ -55,7 +49,7 @@ export class EventsCreateComponent {
       Validators.compose([
         Validators.required,
         Validators.minLength(3),
-        Validators.maxLength(100),
+        Validators.maxLength(56),
         Validators.pattern(/^(?!\s*$).+/),
       ]),
     ],
@@ -84,7 +78,7 @@ export class EventsCreateComponent {
     if (this.eventCreteForm.invalid) return;
 
     const formData = this.eventCreteForm.value;
-    const newEvent: IEventCreate = {
+    const newEvent: IEventDTO = {
       title: formData.title.trim(),
       description: formData.description.trim(),
       status: formData.status,
@@ -99,5 +93,9 @@ export class EventsCreateComponent {
       });
       setTimeout(() => this.router.navigate(['../events']), 1000);
     });
+  }
+
+  ngOnDestroy(): void {
+    this.imageGeneratorService.resetToDefaultImage();
   }
 }

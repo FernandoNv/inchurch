@@ -29,7 +29,7 @@ export class EventsListComponent {
     this.confirmationService.confirm({
       target: e.event.target as EventTarget,
       header: 'Exclusão de Evento',
-      message: 'Você quer mesmo exlcuir esse Evento?',
+      message: 'Você deseja exlcuir esse Evento?',
       icon: 'pi pi-info-circle',
       rejectLabel: 'Cancelar',
       rejectButtonProps: {
@@ -38,7 +38,7 @@ export class EventsListComponent {
         outlined: true,
       },
       acceptButtonProps: {
-        label: 'Apagar',
+        label: 'Excluir',
         severity: 'danger',
       },
 

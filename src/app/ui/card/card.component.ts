@@ -22,7 +22,7 @@ export class CardComponent {
   onDeleteButtonClick = output<{ event: Event; id: number }>();
 
   private formatDescription(value: string): string {
-    const MAX_STRING_LENGTH = 75;
+    const MAX_STRING_LENGTH = 65;
     if (value.length >= MAX_STRING_LENGTH) {
       return value?.slice(0, MAX_STRING_LENGTH) + '...';
     }

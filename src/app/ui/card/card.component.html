@@ -2,7 +2,7 @@
   styleClass="max-w-80 h-[420px] overflow-hidden relative flex justify-between"
 >
   <ng-template #header>
-    @if (imageSrc() && imageSrc() !== "") {
+    @if (imageSrc() && imageSrc() !== "" && imageSrc() !== undefined) {
       <img
         class="w-full"
         width="300"
@@ -22,12 +22,12 @@
       />
     }
   </ng-template>
-  <h2 class="font-bold py-2 mb-1">{{ appTitle() }}</h2>
+  <h2 class="font-bold py-2 mb-1 break-words">{{ appTitle() }}</h2>
   <span
     class="px-4 py-2 bg-white shadow-md rounded-xl absolute top-[195px] left-[20px] font-semibold text-sm"
     >{{ status() }}</span
   >
-  <p class="text-sm">{{ description() }}</p>
+  <p class="text-sm break-words">{{ description() }}</p>
   <ng-template #footer>
     <div class="flex mt-1 flex-row justify-between items-center">
       <div class="app-created-at">

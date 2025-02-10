@@ -1,9 +1,8 @@
 import { inject, Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { Observable, take } from 'rxjs';
-import { IEvent } from './event';
+import { IEvent, IEventDTO } from './event';
 import { HttpClient } from '@angular/common/http';
-import { IEventCreate } from './events-create/events-create.component';
 
 @Injectable()
 export class EventService {
@@ -22,7 +21,7 @@ export class EventService {
     return this.http.get<IEvent>(url).pipe(take(1));
   }
 
-  create(newEvent: IEventCreate): Observable<IEvent> {
+  create(newEvent: IEventDTO): Observable<IEvent> {
     const dateStr = new Date().toISOString();
     return this.http
       .post<IEvent>(this.API_URL, {
@@ -36,5 +35,10 @@ export class EventService {
     const url = `${this.API_URL}/${id}`;
 
     return this.http.delete<IEvent>(url).pipe(take(1));
+  }
+
+  update(data: IEventDTO, id: number): Observable<IEvent> {
+    const url = `${this.API_URL}/${id}`;
+    return this.http.put<IEvent>(url, data).pipe(take(1));
   }
 }

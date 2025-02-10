@@ -33,4 +33,8 @@ export class ImageGeneratorService {
         this.image$.next(next);
       });
   }
+
+  public resetToDefaultImage(): void {
+    this.image$.next(NO_IMAGE_SRC);
+  }
 }

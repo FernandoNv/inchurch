@@ -1,0 +1,74 @@
+<div class="app-events-edit">
+  <h1 class="app-title">Edição de Evento</h1>
+  <form
+    class="max-w-4xl mx-auto h-full flex flex-col gap-4 px-4 py-8 justify-center"
+    [formGroup]="eventEditForm"
+  >
+    <div class="flex flex-col lg:flex-row w-full">
+      <div class="flex flex-col w-full gap-8">
+        <div class="flex flex-col gap-2">
+          <label for="title" class="font-semibold">Título</label>
+          <input
+            formControlName="title"
+            pInputText
+            id="title"
+            name="title"
+            aria-describedby="title-help"
+          />
+          <small id="title-help">Defina o título do evento</small>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="description" class="font-semibold">Descrição</label>
+          <textarea
+            formControlName="description"
+            id="description"
+            name="description"
+            rows="5"
+            cols="30"
+            pTextarea
+            [autoResize]="true"
+          ></textarea>
+          <small id="description-help">Defina a descrição do evento</small>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="status" class="font-semibold">Status</label>
+          <p-selectButton
+            id="status"
+            [options]="eventStatusOptions"
+            formControlName="status"
+            optionLabel="label"
+            optionValue="value"
+          />
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center lg:items-end w-full p-10 lg:p-0"
+      >
+        <div class="flex flex-col justify-center items-center gap-4">
+          <p-image
+            [src]="imageSrcEdit()"
+            alt="Image"
+            width="300"
+            height="200"
+          />
+          <p-button
+            type="button"
+            size="small"
+            severity="secondary"
+            (onClick)="generateRandomImage()"
+            label="Gerar Imagem"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row items-center justify-end gap-4 py-4">
+      <p-button routerLink="/events" severity="secondary" label="Cancelar" />
+      <p-button
+        type="submit"
+        [disabled]="eventEditForm.invalid"
+        (onClick)="editEvent()"
+        label="Salvar"
+      />
+    </div>
+  </form>
+</div>
