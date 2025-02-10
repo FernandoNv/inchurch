@@ -1,0 +1,10 @@
+<div #menuMobile class="card flex justify-center">
+  <p-menu [appendTo]="menuMobile" #menu [model]="items()" [popup]="true" />
+  <p-button
+    severity="secondary"
+    text
+    [outlined]="true"
+    (onClick)="menu.toggle($event)"
+    icon="pi pi-bars"
+  />
+</div>

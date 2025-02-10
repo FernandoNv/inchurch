@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MenuComponent } from '../../ui/menu/menu.component';
+import { MenuSideBarComponent } from '../../ui/menu/menu-side-bar/menu-side-bar.component';
 import { HeaderComponent } from '../../ui/header/header.component';
 
 @Component({
   selector: 'app-main-layout',
-  imports: [RouterOutlet, MenuComponent, HeaderComponent],
+  imports: [RouterOutlet, MenuSideBarComponent, HeaderComponent],
   template: `
     <app-menu class="app-menu" />
     <main class="app-container">

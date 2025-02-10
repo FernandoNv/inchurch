@@ -13,11 +13,16 @@
   </ng-template>
 
   <ng-template #end>
+    <app-menu-mobile
+      (onSignOutClick)="onSignOutClick()"
+      [user]="user()"
+      class="block md:hidden"
+    />
     <div class="app-profile-area">
       <p-button
         variant="text"
         severity="secondary"
-        (click)="headerOptions.toggle($event)"
+        (onClick)="headerOptions.toggle($event)"
       >
         <app-profile-info [user]="user()" />
       </p-button>

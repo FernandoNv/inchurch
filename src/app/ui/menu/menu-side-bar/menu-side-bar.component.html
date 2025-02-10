@@ -11,9 +11,9 @@
         <a
           class="app-link-item hover:bg-[#e5eaec]"
           routerLinkActive="app-router-active"
-          [routerLink]="item['route']"
+          [routerLink]="item['routerLink']"
         >
-          <i [class]="['pi', item.icon]"></i>
+          <i [class]="item.icon"></i>
           <span>{{ item.label }}</span>
         </a>
       </li>

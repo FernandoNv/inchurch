@@ -6,10 +6,18 @@ import { Menu } from 'primeng/menu';
 import { Button } from 'primeng/button';
 import { RouterLink } from '@angular/router';
 import { ProfileInfoComponent } from '../profile-info/profile-info.component';
+import { MenuMobileComponent } from '../menu/menu-mobile/menu-mobile.component';
 
 @Component({
   selector: 'app-header',
-  imports: [Toolbar, Menu, Button, RouterLink, ProfileInfoComponent],
+  imports: [
+    Toolbar,
+    Menu,
+    Button,
+    RouterLink,
+    ProfileInfoComponent,
+    MenuMobileComponent,
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -27,5 +35,9 @@ export class HeaderComponent implements OnInit {
         },
       },
     ];
+  }
+
+  protected onSignOutClick() {
+    this.auth.signout();
   }
 }
