@@ -3,7 +3,7 @@ import { Menu } from 'primeng/menu';
 import { Button } from 'primeng/button';
 import { MENU_ITEMS } from '../menu';
 import { IUser } from '../../../core/auth/auth.service';
-import { MenuItem, MenuItemCommandEvent } from 'primeng/api';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-menu-mobile',
@@ -19,15 +19,17 @@ export class MenuMobileComponent {
     const username = this.user().name.split(' ')[0];
     const newItemMenu: MenuItem = {
       label: username,
-      items: [
-        {
-          label: 'Sair',
-          command: (event: MenuItemCommandEvent) => {
-            this.onSignOutClick.emit();
-          },
-        },
-      ],
     };
-    return [...MENU_ITEMS, { separator: true }, newItemMenu];
+    return [
+      ...MENU_ITEMS,
+      { separator: true },
+      newItemMenu,
+      {
+        label: 'Sair',
+        command: (event) => {
+          this.onSignOutClick.emit();
+        },
+      },
+    ];
   });
 }

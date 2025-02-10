@@ -176,6 +176,11 @@
       "name": "Fernando",
       "email": "fernando.teste@email.com",
       "id": 3
+    },
+    {
+      "name": "Teste de Cadastro",
+      "email": "teste@email.com",
+      "id": 4
     }
   ]
 }
