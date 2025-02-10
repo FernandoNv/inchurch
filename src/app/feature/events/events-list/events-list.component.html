@@ -1,8 +1,29 @@
 <section class="app-events-list">
   <app-events-header />
-  <app-events-card
-    (onDeleteButtonClick)="onDeleteButtonClick($event)"
-    (onEditButtonClick)="onEditButtonClick($event)"
-    [events]="events()"
-  />
+  @if (view() === "cards") {
+    <app-events-card
+      (onDeleteButtonClick)="onDeleteButtonClick($event)"
+      (onEditButtonClick)="onEditButtonClick($event)"
+      [events]="eventList()"
+    />
+  } @else {
+    <app-events-table
+      (onDeleteButtonClick)="onDeleteButtonClick($event)"
+      (onEditButtonClick)="onEditButtonClick($event)"
+      [events]="eventList()"
+    />
+  }
+
+  <div class="flex justify-end">
+    <p-button
+      (onClick)="onViewButtonClick()"
+      [label]="viewLabel()"
+      text
+      size="small"
+      severity="secondary"
+      styleClass="text-bold"
+    >
+      <i class="pi pi-objects-column"></i>
+    </p-button>
+  </div>
 </section>

@@ -1,0 +1,9 @@
+.app-events-table {
+  @apply h-full flex lg:min-h-[calc(100dvh-4*74px-4rem)] min-h-[calc(100dvh-3*74px-199px-4rem)];
+}
+
+::ng-deep {
+  .p-datatable-table-container {
+    max-height: initial !important;
+  }
+}

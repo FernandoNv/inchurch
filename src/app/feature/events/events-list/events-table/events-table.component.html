@@ -1,0 +1,65 @@
+<div class="app-events-table">
+  @if (events().length && events().length > 0) {
+    <p-table
+      [value]="events()"
+      responsiveLayout="stack"
+      [scrollable]="true"
+      scrollHeight="400px"
+    >
+      <ng-template #header>
+        <tr>
+          <th><b>Imagem: </b></th>
+          <th><b>Título: </b></th>
+          <th><b>Descrição: </b></th>
+          <th><b>Data de Publicação: </b></th>
+          <th><b>Status: </b></th>
+          <th><b>Ações: </b></th>
+        </tr>
+      </ng-template>
+      <ng-template #body let-event>
+        <tr>
+          <td>
+            <img
+              width="300"
+              height="200"
+              priority
+              [alt]="'Image do evento: ' + event.title"
+              [ngSrc]="event.imageSrc"
+              class=""
+            />
+          </td>
+          <td>{{ event.title }}</td>
+          <td>{{ event.description }}</td>
+          <td>{{ event.createdAt | cardCreatedAtFormatter }}</td>
+          <td>{{ event.status }}</td>
+          <td>
+            <span class="app-action">
+              <p-button
+                size="large"
+                variant="text"
+                severity="secondary"
+                [outlined]="false"
+                (onClick)="editButtonClick(event.id)"
+              >
+                <i class="pi pi-pencil"></i>
+              </p-button>
+            </span>
+            <span class="app-action">
+              <p-button
+                size="large"
+                variant="text"
+                severity="secondary"
+                (onClick)="deleteButtonClick($event, event.id)"
+                [outlined]="false"
+              >
+                <i class="pi pi-trash"></i>
+              </p-button>
+            </span>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  } @else {
+    <p>Sem dados</p>
+  }
+</div>

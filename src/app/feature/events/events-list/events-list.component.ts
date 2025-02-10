@@ -1,16 +1,30 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { EventsCardComponent } from './events-card/events-card.component';
 import { EventsHeaderComponent } from './events-header/events-header.component';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { IEvent } from '../event';
+import { formatDescriptionFn, formatStatusFn, IEvent } from '../event';
 import { EventService } from '../event.service';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { Button } from 'primeng/button';
+import { EventsTableComponent } from './events-table/events-table.component';
+
+const VIEW_CARD_LABEL = 'Ver tabela em lista';
+const VIEW_TABLE_LABEL = 'Ver tabela em cards';
+
+export interface IEventListItem extends Omit<IEvent, 'status'> {
+  status: string;
+}
 
 @Component({
   selector: 'app-events-list',
-  imports: [EventsCardComponent, EventsHeaderComponent],
+  imports: [
+    EventsCardComponent,
+    EventsHeaderComponent,
+    Button,
+    EventsTableComponent,
+  ],
   templateUrl: './events-list.component.html',
   styleUrl: './events-list.component.scss',
 })
@@ -24,6 +38,17 @@ export class EventsListComponent {
   private events$: Observable<IEvent[]> = this.service.getAllByFilter();
 
   events = toSignal(this.events$, { initialValue: [] as IEvent[] });
+  eventList = computed(() => this.formatEvents(this.events()));
+  view = signal<'cards' | 'table'>('cards');
+  viewLabel = signal(VIEW_CARD_LABEL);
+
+  private formatEvents(next: IEvent[]): IEventListItem[] {
+    return next.map((e) => ({
+      ...e,
+      description: formatDescriptionFn(e.description),
+      status: formatStatusFn(e.status),
+    }));
+  }
 
   onDeleteButtonClick(e: { event: Event; id: number }) {
     this.confirmationService.confirm({
@@ -64,5 +89,12 @@ export class EventsListComponent {
 
   onEditButtonClick(id: number) {
     this.router.navigate(['../events/' + id]);
+  }
+
+  onViewButtonClick() {
+    this.view.update((prev) => (prev === 'cards' ? 'table' : 'cards'));
+    this.viewLabel.update((prev) =>
+      prev === VIEW_CARD_LABEL ? VIEW_TABLE_LABEL : VIEW_CARD_LABEL,
+    );
   }
 }

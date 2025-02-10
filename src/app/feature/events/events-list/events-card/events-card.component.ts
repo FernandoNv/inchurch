@@ -1,6 +1,6 @@
 import { Component, input, output } from '@angular/core';
 import { CardComponent } from '../../../../ui/card/card.component';
-import { IEvent } from '../../event';
+import { IEventListItem } from '../events-list.component';
 
 @Component({
   selector: 'app-events-card',
@@ -9,8 +9,7 @@ import { IEvent } from '../../event';
   styleUrl: './events-card.component.scss',
 })
 export class EventsCardComponent {
-  events = input<IEvent[]>([] as IEvent[]);
-
+  events = input<IEventListItem[]>([] as IEventListItem[]);
   onDeleteButtonClick = output<{ event: Event; id: number }>();
   onEditButtonClick = output<number>();
 

@@ -13,30 +13,13 @@ import { CardCreatedAtFormatterPipe } from './card-created-at-formatter.pipe';
 export class CardComponent {
   id = input<number>(-1);
   appTitle = input<string>('', { alias: 'title' });
-  description = input('', { transform: this.formatDescription });
+  description = input('');
   imageSrc = input<string>('');
-  status = input('', { transform: this.formatStatus });
+  status = input('');
   createdAt = input<string>('');
 
   onEditButtonClick = output<number>();
   onDeleteButtonClick = output<{ event: Event; id: number }>();
-
-  private formatDescription(value: string): string {
-    const MAX_STRING_LENGTH = 65;
-    if (value.length >= MAX_STRING_LENGTH) {
-      return value?.slice(0, MAX_STRING_LENGTH) + '...';
-    }
-
-    return value;
-  }
-
-  private formatStatus(value: string): string {
-    if (value === 'active') {
-      return 'Ingressos ativos';
-    }
-
-    return 'Sem ingressos ativos';
-  }
 
   protected editButtonClick(): void {
     this.onEditButtonClick.emit(this.id());
