@@ -15,14 +15,14 @@ Projeto criado como desafio para a vaga de Desenvolvedor Angular
 - [x] Definir os componentes da tela de "Eventos"
 - [X] Definir layout e os componentes da tela de "Detalhes De Evento"
 - [x] Adicionar componente de header
-- [ ] Adicionar componente de menu lateral
-- [ ] Adicionar componente para filtro de eventos
-- [ ] Adicionar componente para listar Eventos(Visão cards)
-  - [ ] Adicionar componente Evento(Visão card)
-- [ ] Adicionar componente para listar Eventos(Visão Tabela)
-- [ ] Adicionar componente e pagina para criação de Evento
-- [ ] Adicionar componente e pagina para edição de Evento
-- [ ] Adicionar modal para exclusão de Evento
+- [x] Adicionar componente de menu lateral
+- [x] Adicionar componente para filtro de eventos por titulo
+- [x] Adicionar componente para listar Eventos(Visão cards)
+  - [x] Adicionar componente Evento(Visão card)
+- [x] Adicionar componente para listar Eventos(Visão Tabela)
+- [x] Adicionar componente e pagina para criação de Evento
+- [x] Adicionar componente e pagina para edição de Evento
+- [x] Adicionar modal para exclusão de Evento
 - [ ] Adicionar Teste do Cypress
   - [ ] Teste de Login
   - [ ] Teste de criação de Evento
