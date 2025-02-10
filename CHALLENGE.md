@@ -56,8 +56,8 @@ detalhes, e um sistema de login simples.
 1. **Clone do Repositório**
    Clone este repositório para iniciar o desenvolvimento:
  ```bash
- git clone <link-do-repositório>
- cd desafio-frontend-angular
+ git clone https://github.com/FernandoNv/inchurch
+ cd inchurch
  ```
 2. **Instalação de Dependências**
    Instale as dependências necessárias do projeto:
@@ -65,15 +65,18 @@ detalhes, e um sistema de login simples.
  npm install
  ```
 3. **Iniciar a API Fake**
-   Utilize o JSON Server para simular a API:
+   Utilize o JSON Server para simular a API.
  ```bash
- npm run server
+  cd backend
+  npm install
+  npm run server
  ```
 O servidor rodará em `http://localhost:3000`.
 4. **Executar a Aplicação**
    Inicie a aplicação Angular:
  ```bash
- npm start
+ cd ../
+ npm run start
  ```
 Acesse a aplicação em `http://localhost:4200`.
 5. **Teste de Responsividade**

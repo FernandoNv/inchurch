@@ -32,6 +32,41 @@ Projeto criado como desafio para a vaga de Desenvolvedor Angular
     - [ ] Visão de Tabela
     - [ ] Visão de Cards
 =========================================================================
+## Instruções para Entrega (Exemplo)
+1. **Clone do Repositório**
+   Clone este repositório para iniciar o desenvolvimento:
+ ```bash
+ git clone https://github.com/FernandoNv/inchurch
+ cd inchurch
+ ```
+2. **Instalação de Dependências**
+   Instale as dependências necessárias do projeto:
+ ```bash
+ npm install
+ ```
+3. **Iniciar a API Fake**
+   Utilize o JSON Server para simular a API.
+ ```bash
+  cd backend
+  npm install
+  npm run server
+ ```
+O servidor rodará em `http://localhost:3000`.
+4. **Executar a Aplicação**
+   Inicie a aplicação Angular:
+ ```bash
+ cd ../
+ npm run start
+ ```
+Acesse a aplicação em `http://localhost:4200`.
+5. **Faça o cadastro na aplicação**
+   Crie um novo usuário informando nome e email. Após isso, fazer login.
+---
+6. **Teste de Responsividade**
+   Verifique o comportamento responsivo da aplicação em dispositivos móveis.
+---
+
+==========================================================================
 
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
