@@ -49,11 +49,11 @@ Projeto criado como desafio para a vaga de Desenvolvedor Angular
  ```bash
   cd backend
   npm install
-  npm run server
+  npm run start
  ```
 O servidor rodará em `http://localhost:3000`.
 4. **Executar a Aplicação**
-   Inicie a aplicação Angular:
+   Inicie a aplicação Angular:Precisamos sair da pasta backend e voltar para a pasta da aplicação angular
  ```bash
  cd ../
  npm run start
