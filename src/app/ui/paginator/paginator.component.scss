@@ -1,0 +1,6 @@
+.app-paginator {
+  @apply flex flex-row gap-2;
+  .app-page {
+    @apply text-white bg-[var(--p-primary-color)] rounded-full text-sm p-4 w-8 h-8 flex items-center justify-center;
+  }
+}

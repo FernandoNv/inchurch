@@ -5,8 +5,6 @@ import { IEvent, IEventDTO } from './event';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { EventDataService } from './event-data.service';
 
-const ITEMS_PER_PAGE = 8;
-
 @Injectable()
 export class EventService {
   private readonly API_URL: string = `${environment.apiUrl}/events`;
@@ -17,10 +15,10 @@ export class EventService {
     this.setNextDataBySearch();
   }
 
-  setNextDataBySearch(page = 1, search: string = ''): void {
+  setNextDataBySearch(search: string = '', page = 1, itemsPerPage = 8): void {
     let params = new HttpParams()
       .set('_page', page)
-      .set('_limit', ITEMS_PER_PAGE);
+      .set('_limit', itemsPerPage);
 
     if (search !== '') {
       params = params.set('title', search);

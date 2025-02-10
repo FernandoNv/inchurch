@@ -14,6 +14,7 @@
     />
   }
 
+  <app-paginator [list]="eventList()" [(page)]="page" class="mx-auto" />
   <div class="flex justify-end">
     <p-button
       (onClick)="onViewButtonClick()"

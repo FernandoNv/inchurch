@@ -1,0 +1,23 @@
+<div class="app-paginator">
+  <span>
+    <p-button
+      [disabled]="page() === 1"
+      (onClick)="decrement()"
+      size="large"
+      severity="secondary"
+    >
+      <i class="pi pi-angle-left"></i>
+    </p-button>
+  </span>
+  <div class="app-page">
+    {{ page() }}
+  </div>
+  <p-button
+    [disabled]="list()?.length === 0"
+    (onClick)="increment()"
+    size="large"
+    severity="secondary"
+  >
+    <i class="pi pi-angle-right"></i>
+  </p-button>
+</div>
