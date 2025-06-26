@@ -1,8 +1,8 @@
 import { inject, Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
-import { Observable, take } from 'rxjs';
+import { map, Observable, take } from 'rxjs';
 import { IEvent, IEventDTO } from './event';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { EventDataService } from './event-data.service';
 
 @Injectable()
@@ -16,17 +16,12 @@ export class EventService {
   }
 
   setNextDataBySearch(search: string = '', page = 1, itemsPerPage = 8): void {
-    let params = new HttpParams()
-      .set('_page', page)
-      .set('_limit', itemsPerPage);
+    const data$ = this.http.get<IEvent[]>(this.API_URL).pipe(
+      map((next) => this.filterDataBySearch(next, search)),
+      map((next) => next.slice((page - 1) * itemsPerPage, page * itemsPerPage)),
+      take(1),
+    );
 
-    if (search !== '') {
-      params = params.set('title', search);
-    }
-
-    const data$ = this.http
-      .get<IEvent[]>(this.API_URL, { params })
-      .pipe(take(1));
     data$.subscribe((next) => this.eventDataService.setNextData(next));
   }
 
@@ -55,5 +50,18 @@ export class EventService {
   update(data: IEventDTO, id: number): Observable<IEvent> {
     const url = `${this.API_URL}/${id}`;
     return this.http.put<IEvent>(url, data).pipe(take(1));
+  }
+
+  private filterDataBySearch(data: IEvent[], search: string) {
+    if (data.length === 0) return data;
+
+    const keys = ['title', 'description'];
+
+    return data.filter((d) =>
+      keys.some((k) =>
+        // @ts-ignore
+        d[k].toLocaleLowerCase().includes(search.toLocaleLowerCase()),
+      ),
+    );
   }
 }

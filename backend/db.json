@@ -3,15 +3,15 @@
     {
       "id": 3,
       "imageSrc": "https://fastly.picsum.photos/id/637/300/200.jpg?hmac=A2kCJ9wYEZH8dTX5XNogS7oft8evrwKp7DFVue55AsE",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Encontro com Cristo: Renove sua fé!",
+      "description": "Um momento especial para se conectar com Deus através de orações, cânticos e reflexões profundas. Venha viver essa experiência transformadora em comunidade.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 4,
-      "title": "Deus é tudo na minha vida, mais preciso",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised i",
+      "title": "Caminhando com Jesus",
+      "description": "Neste retiro espiritual, descubra como fortalecer seu relacionamento com Deus através da meditação e partilha de testemunhos inspiradores.",
       "status": "inactive",
       "imageSrc": "https://fastly.picsum.photos/id/255/300/200.jpg?hmac=60oVSSnsa3ipeIz1EGqYqO0WZsuNJ6svNvC5imES7tM",
       "createdAt": "2025/02/07"
@@ -19,134 +19,134 @@
     {
       "id": 5,
       "imageSrc": "https://fastly.picsum.photos/id/78/300/200.jpg?hmac=n7Sj8aECCS5WoJkWO-zflsPVDeezs5U4M7WgQjLACA0",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Noite de Adoração e Milagres",
+      "description": "Uma celebração poderosa onde a presença divina se manifesta. Traga seu coração aberto e receba as bênçãos que Deus preparou para você.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 6,
       "imageSrc": "https://fastly.picsum.photos/id/794/300/200.jpg?hmac=HDhH_umexV_q0wBwlZ1XyvuHlLxJk1zJl3sMKr8gQlw",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Santa Missa da Família",
+      "description": "Celebração eucarística especial para fortalecer os laços familiares através da graça de Deus. Traga seus entes queridos para essa bênção.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 7,
       "imageSrc": "https://fastly.picsum.photos/id/564/300/200.jpg?hmac=SDGr5zbEi87MUj_Ku7TMXibLhOlCXW9usKBHwZMhMhk",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Retiro de Carnaval com Deus",
+      "description": "Aproveite o feriado para se afastar do mundo e se aproximar do Pai. Dias de oração, silêncio e renovação espiritual.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 9,
       "imageSrc": "https://fastly.picsum.photos/id/869/300/200.jpg?hmac=sf3uQkGefAh2kM1SSk9e1Dxcp74FGR1wKKhH2-pH_fc",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Cura Interior pela Fé",
+      "description": "Workshop espiritual para libertação de traumas e feridas através do poder restaurador do amor divino. Deixe Deus sarar seu coração.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 10,
       "imageSrc": "https://fastly.picsum.photos/id/573/300/200.jpg?hmac=xh_OGIi3Lssumlx1x8W_PscpGn95vDFKqe-XhEW0a-g",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Batismo no Espírito Santo",
+      "description": "Encontro especial para quem busca o revestimento de poder e os dons espirituais mencionados nas Escrituras Sagradas.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 11,
       "imageSrc": "https://fastly.picsum.photos/id/121/300/200.jpg?hmac=8B45NYU7g0fx9IH5Hc69vKCLnpDGaNHhlWfqiJitSwc",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Via Sacra Vivencial",
+      "description": "Representação comovente da Paixão de Cristo, convidando os fiéis a refletirem sobre o sacrifício redentor de Jesus.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 12,
       "imageSrc": "https://fastly.picsum.photos/id/393/300/200.jpg?hmac=Vs_QJkT6xXDlcyUXYxMb1XaRzHhmZwR7ttxwK5v-_Vc",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Terço dos Homens",
+      "description": "Reunião mensal onde os homens se unem em oração pelo Rosário, fortalecendo sua espiritualidade e papel na sociedade.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 13,
       "imageSrc": "https://fastly.picsum.photos/id/483/300/200.jpg?hmac=36AfCnRl-Q3x7op1D-N7PmguK47nNm4or6JCX5UgT18",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Encontro de Casais com Cristo",
+      "description": "Atividade para renovar os votos matrimoniais à luz dos valores cristãos, com palestras e dinâmicas para fortalecer o lar.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 14,
       "imageSrc": "https://fastly.picsum.photos/id/192/300/200.jpg?hmac=Y0d_zFaVbScjRFptPxBiFa-DNnv-qgqcUZ2xGuPWhHU",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Jovens em Missão",
+      "description": "Evento para a juventude católica com adoração, música sacra e workshops sobre vocação e propósito em Deus.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 15,
       "imageSrc": "https://fastly.picsum.photos/id/528/300/200.jpg?hmac=drdAfS874RKa2Qd7QNzUY_vQJ8-DDvG0MwB7XIFd2Oc",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Manhã de Louvor e Gratidão",
+      "description": "Comece seu dia abençoado com cânticos de exaltação e momentos de ação de graças pelas maravilhas divinas em sua vida.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 16,
       "imageSrc": "https://fastly.picsum.photos/id/669/300/200.jpg?hmac=FszhCKDSLapO2E3ICtTCcMGY4-a-ItQvf199yjc5w4A",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Workshop Bíblico: Provérbios",
+      "description": "Estudo aprofundado do livro da Sabedoria, aplicando seus ensinamentos atemporais aos desafios da vida moderna.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 17,
       "imageSrc": "https://fastly.picsum.photos/id/653/300/200.jpg?hmac=ldJpV5U03-ExraEIYADfGLnG4pGN_ChsVGerqIqpA9U",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Santa Missa das Crianças",
+      "description": "Celebração especial com linguagem adaptada para os pequenos, incentivando o amor a Deus desde a infância.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 18,
       "imageSrc": "https://fastly.picsum.photos/id/454/300/200.jpg?hmac=YR1cEr2zBu19_RDfPRoXQSPIzWJ5llp49lOYFIoUMFc",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Grupo de Oração: Renascer",
+      "description": "Reunião semanal para oração intercessora, cura interior e fortalecimento da fé através da partilha fraterna.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 19,
       "imageSrc": "https://fastly.picsum.photos/id/410/300/200.jpg?hmac=lCJYzIsVm6sayhbRmxBGiiR65mpJeAKRhRmjgfnIkUg",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Lectio Divina Comunitária",
+      "description": "Prática antiga de leitura orante da Bíblia, meditando a Palavra de Deus em grupo e aplicando-a à vida cotidiana.",
       "status": "active",
       "createdAt": "2025/02/07"
     },
     {
       "id": 20,
-      "title": "Deus é tudo na minha vida",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Deus é meu refúgio",
+      "description": "Encontro para quem busca consolo nas adversidades, aprendendo a confiar na divina providência através de salmos e testemunhos.",
       "status": "active",
       "imageSrc": "https://fastly.picsum.photos/id/825/300/200.jpg?hmac=OokR0rinMoWx_eJxNI-TwOdKTJxh0m-El2BCXFRxeUM",
       "createdAt": "2025/02/07"
     },
     {
       "id": 21,
-      "title": "Título da atividade em questão",
-      "description": "Descrição do evento evento testes.",
+      "title": "Evangelização na Praça",
+      "description": "Atividade missionária para compartilhar o amor de Cristo em espaços públicos com música, oração e diálogo.",
       "status": "active",
       "imageSrc": "https://fastly.picsum.photos/id/730/300/200.jpg?hmac=BQGU8tb4tfvI8NZJ1kogAqkbXsSdMyxnpbxJg3FrYvg",
       "createdAt": "2025-06-10T17:25:28.181Z"
     },
     {
-      "title": "Título Teste",
-      "description": "Descrição do Evento de forma presencial e gratuita no nosso estabelecimento na Barra",
+      "title": "Retiro Espiritual Gratuito",
+      "description": "Evento presencial para recarregar as energias da fé através de palestras, grupos de partilha e momentos de oração.",
       "status": "active",
       "imageSrc": "https://fastly.picsum.photos/id/908/300/200.jpg?hmac=LA1p9bVQc1HGV9GlGc98YnSM0L_VJe3AxOFUa0vF7JY",
       "createdAt": "2025-06-10T17:31:32.425Z",
