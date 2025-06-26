@@ -1,33 +1,35 @@
-<p-card
-  styleClass="max-w-80 h-[420px] overflow-hidden relative flex justify-between"
->
+<p-card styleClass="max-w-80 h-[420px] overflow-hidden flex justify-between">
   <ng-template #header>
-    @if (imageSrc() && imageSrc() !== "" && imageSrc() !== undefined) {
-      <img
-        class="w-full"
-        width="300"
-        height="200"
-        priority
-        [alt]="'Image do evento: ' + appTitle()"
-        [ngSrc]="imageSrc()"
-      />
-    } @else {
-      <img
-        class="w-full"
-        width="300"
-        height="200"
-        priority
-        alt="Evento sem imagem definida"
-        ngSrc="images/no-image.png"
-      />
-    }
+    <div class="w-full h-full relative">
+      @if (imageSrc() && imageSrc() !== "" && imageSrc() !== undefined) {
+        <img
+          class="w-full"
+          width="320"
+          height="213.33"
+          priority
+          [alt]="'Image do evento: ' + appTitle()"
+          [ngSrc]="imageSrc()"
+        />
+      } @else {
+        <img
+          class="w-full"
+          width="320"
+          height="213.33"
+          priority
+          alt="Evento sem imagem definida"
+          ngSrc="images/no-image.png"
+        />
+      }
+
+      <span
+        class="px-4 py-2 bg-white shadow-md rounded-xl absolute bottom-[-20px] left-[20px] font-semibold text-sm"
+      >
+        {{ status() }}
+      </span>
+    </div>
   </ng-template>
   <h2 class="font-bold py-2 mb-1 break-words">{{ appTitle() }}</h2>
-  <span
-    class="px-4 py-2 bg-white shadow-md rounded-xl absolute top-[195px] left-[20px] font-semibold text-sm"
-    >{{ status() }}</span
-  >
-  <p class="text-sm break-words">{{ description() }}</p>
+  <p class="text-sm break-words min-h-10">{{ description() }}</p>
   <ng-template #footer>
     <div class="flex mt-1 flex-row justify-between items-center">
       <div class="app-created-at">

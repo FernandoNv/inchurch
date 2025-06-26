@@ -1,22 +1,6 @@
 {
   "events": [
     {
-      "id": 1,
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "status": "active",
-      "imageSrc": "https://fastly.picsum.photos/id/347/300/200.jpg?hmac=osf3Iz6aJgegjJYL1XPeMAGGeb9sYsPJUJ1rEBugrXk",
-      "createdAt": "2025/02/07"
-    },
-    {
-      "id": 2,
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "status": "inactive",
-      "imageSrc": "https://fastly.picsum.photos/id/6/300/200.jpg?hmac=UOOhJr87cIpv2i10xQMdHKHRuXsWvWqCZ6CESOx-YNQ",
-      "createdAt": "2025/02/07"
-    },
-    {
       "id": 3,
       "imageSrc": "https://fastly.picsum.photos/id/637/300/200.jpg?hmac=A2kCJ9wYEZH8dTX5XNogS7oft8evrwKp7DFVue55AsE",
       "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
@@ -51,14 +35,6 @@
     {
       "id": 7,
       "imageSrc": "https://fastly.picsum.photos/id/564/300/200.jpg?hmac=SDGr5zbEi87MUj_Ku7TMXibLhOlCXW9usKBHwZMhMhk",
-      "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "status": "active",
-      "createdAt": "2025/02/07"
-    },
-    {
-      "id": 8,
-      "imageSrc": "https://fastly.picsum.photos/id/807/300/200.jpg?hmac=gWP12VdF9_c6OalRsEc0yo3dhDQ5MxQuP-mTfY8UEXI",
       "title": "Deus é tudo na minha vida, mais preciso de duas linhas!",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "status": "active",
@@ -159,6 +135,22 @@
       "status": "active",
       "imageSrc": "https://fastly.picsum.photos/id/825/300/200.jpg?hmac=OokR0rinMoWx_eJxNI-TwOdKTJxh0m-El2BCXFRxeUM",
       "createdAt": "2025/02/07"
+    },
+    {
+      "id": 21,
+      "title": "Título da atividade em questão",
+      "description": "Descrição do evento evento testes.",
+      "status": "active",
+      "imageSrc": "https://fastly.picsum.photos/id/730/300/200.jpg?hmac=BQGU8tb4tfvI8NZJ1kogAqkbXsSdMyxnpbxJg3FrYvg",
+      "createdAt": "2025-06-10T17:25:28.181Z"
+    },
+    {
+      "title": "Título Teste",
+      "description": "Descrição do Evento de forma presencial e gratuita no nosso estabelecimento na Barra",
+      "status": "active",
+      "imageSrc": "https://fastly.picsum.photos/id/908/300/200.jpg?hmac=LA1p9bVQc1HGV9GlGc98YnSM0L_VJe3AxOFUa0vF7JY",
+      "createdAt": "2025-06-10T17:31:32.425Z",
+      "id": 22
     }
   ],
   "users": [
@@ -181,6 +173,11 @@
       "name": "Teste de Cadastro",
       "email": "teste@email.com",
       "id": 4
+    },
+    {
+      "name": "Fernando Vieira",
+      "email": "email@email.com",
+      "id": 5
     }
   ]
 }
